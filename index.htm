@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST</title>
+    <style>
+
+*{
+    margin: 0%;
+}        
+.webtemp{
+/* height:10vh; */
+margin-top: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.webtemp a{
+text-decoration: none;
+color: rgb(240, 19, 30);
+background-color: white;
+border-radius: 10px;
+}
+body{
+    background-color: black;
+}
+header{
+    background-image: linear-gradient(to left, rgb(70, 70, 240),purple,rgb(240, 19, 30));
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: auto; */
+    margin-bottom: 20px;
+}
+/* Navigation bar Starts here */
+.navbar {
+
+    width: 100vw;
+    margin: auto;
+}
+
+.navbar ul {
+    overflow: auto;
+    /* border: 2px solid black; */
+    width: 57vw;
+    height: 5em;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.navbar li {
+    list-style: none;
+    border-right: 2px solid rgb(253, 248, 248);
+}
+
+.navbar li a {
+    font-family: 'Baloo Bhai 2', cursive;
+    padding: 3px 38px;
+    /* width: 100px; */
+    text-decoration: none;
+    color: rgb(252, 249, 249);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.navbar li a:hover{
+    color: #000000;
+    /* background-color: white; */
+    text-shadow: 10px white;
+    
+}
+.search {
+    display: flex;
+    margin: auto;
+    margin-top: 10px;
+    width: 57vw;
+    height: 0px;
+    border-radius: 30px;
+    border: 2px solid white;
+    align-items: center;
+    background-color: black;
+    padding: 20px;
+    color: white;
+    /* overflow: auto; */
+}
+
+.search input {
+    /* flex: 1; */
+    width: 50em;
+    border: none;
+    height: 30px;
+    outline: none;
+    font-size: 18px;
+    color: white;
+    padding-left: 10px;
+    background: none;
+}
+
+.search button {
+    width: 5em;
+    height: 40px;
+    font-size: 30px;
+    background: none;
+    border: none;
+}
+
+ ::-webkit-input-placeholder{
+    color: white;
+}
+        .cards {
+            /* border: 2px solid   black; */
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            width: 1300px;
+            margin: auto;
+
+        }
+
+        .card {
+            /* border: 2px solid blue; */
+            width: 260px;
+            text-align: center;
+            /* background-color: rgba(219, 171, 191, 0.315); */
+            color: rgb(248, 247, 248);
+            margin-bottom: 10px;
+            border-radius: 10px;
+            /* box-shadow: 10px 10px 20px 1px rgb(173, 171, 171); */
+            cursor: pointer;
+        }
+        .card:hover{
+        box-shadow: 0px 0px  20px red;
+        /* border: 2px solid black; */
+      }
+
+        .card img {
+            border-radius: 10px;
+            /* box-shadow: inset rgb(219, 4, 4); */
+            width: 250px;
+            height: 250px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="webtemp">
+            <a href="#">
+                <h1>Moviewala</h1>
+            </a>
+        </div>
+
+    <header>
+        <nav class="navbar">
+                <ul>
+                    <li><a href="#"> Home</a></li>
+                    <li><a href="#"> Hollywood</a></li>
+                    <li><a href="#"> Bollywood</a></li>
+                    <li><a href="#"> Webseries</a></li>
+                    <li><a href="#">New</a></li>
+                </ul>
+
+                <form action="http://www.google.com/search" class="search">
+                    <input name="q" id="search" type="search" placeholder="Search Here ....">
+                    <!-- <button type="submit"><img src="search.svg" alt="Q" width="30px" height="20px"></img></button> -->
+    
+                </form>
+    </header>
+
+    <div class="cards">
+
+        <a class="card">
+            <img src="K.png" alt="">
+            <h2 class="text">This is the title</h2>
+        </a>
+    </div>
+
+    <script src="Script.js"></script>
+</body>
+
+</html>
