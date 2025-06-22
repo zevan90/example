@@ -1,5 +1,5 @@
 
-let json_url = "Movies.json";
+let json_url = "all.json";
 
 fetch(json_url).then(Response => Response.json())
     .then((data) => {
