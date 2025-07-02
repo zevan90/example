@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MovieZone</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="nav.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #0d1117;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">MovieZone</div>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <ul class="nav-links">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">Genres</a></li>
+            <li><a href="#">Top Rated</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="cards">
+
+        <!-- <a class="card">
+            <img src="K.png" alt="">
+            <h2 class="text">This is the title</h2>
+        </a> -->
+    </div>
+
+
+    <script>
+        function toggleMenu() {
+            document.querySelector("nav").classList.toggle("open");
+        }
+    </script>
+    <script src="Script.js"></script>
+
+</body>
+
+</html>

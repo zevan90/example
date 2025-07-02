@@ -1,15 +1,38 @@
 
-let json_url = "all.json";
+// let json_url = "all.json";
+
+// fetch(json_url).then(Response => Response.json())
+//     .then((data) => {
+//         data.forEach((ele) => {
+//             let { Title, Poster } = ele;
+//             let card = document.createElement('a');
+//             card.classList.add('card');
+//             card.innerHTML = `
+//          <img src="${Poster}" alt="">
+//            <h2 class="text">${Title}</h2>
+//          `
+//             //  cards.appendChild(card);
+
+//             document.querySelector(".cards").appendChild(card)
+
+//         });
+//     });
+
+    let json_url = "all.json";
 
 fetch(json_url).then(Response => Response.json())
     .then((data) => {
         data.forEach((ele) => {
-            let { Title, Poster } = ele;
-            let card = document.createElement('a');
+            let { Title, Poster,} = ele;
+            let cleanTitle = Title.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9\-]/g, '');
+
+            let card = document.createElement('div');
             card.classList.add('card');
-            card.innerHTML = `
-         <img src="${Poster}" alt="">
-           <h2 class="text">${Title}</h2>
+            card.innerHTML = `<a href="./pages/${cleanTitle}.html">
+
+            <img src="${Poster}" alt="">
+              <h2 class="text">${Title}</h2>
+        </a>
          `
             //  cards.appendChild(card);
 
