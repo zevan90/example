@@ -1,24 +1,4 @@
-
-// let json_url = "all.json";
-
-// fetch(json_url).then(Response => Response.json())
-//     .then((data) => {
-//         data.forEach((ele) => {
-//             let { Title, Poster } = ele;
-//             let card = document.createElement('a');
-//             card.classList.add('card');
-//             card.innerHTML = `
-//          <img src="${Poster}" alt="">
-//            <h2 class="text">${Title}</h2>
-//          `
-//             //  cards.appendChild(card);
-
-//             document.querySelector(".cards").appendChild(card)
-
-//         });
-//     });
-
-    let json_url = "all.json";
+let json_url = "all.json";
 
 fetch(json_url).then(Response => Response.json())
     .then((data) => {

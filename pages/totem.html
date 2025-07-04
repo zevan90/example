@@ -3,10 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <title>Totem</title>
- <link rel="stylesheet" href="dpage.css">
+<link rel="stylesheet" href="/style.css">
+
+ <link rel="stylesheet" href="/dpage.css">
   
 </head>
 <body>
+<header>
+    <nav class="navbar">
+      <div class="navbar-top">
+        <a href="#" class="logo">🎬 Moviewala</a>
+        <div class="menu-toggle" id="menu-toggle">
+          <svg viewBox="0 0 100 80" width="30" height="30">
+            <rect width="100" height="10"></rect>
+            <rect y="30" width="100" height="10"></rect>
+            <rect y="60" width="100" height="10"></rect>
+          </svg>
+        </div>
+      </div>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="/index.html">Home</a></li>
+        <li>
+          <a href="#">Hollywood ▾</a>
+          <div class="dropdown-content">
+            <a href="#">Action</a>
+            <a href="#">Drama</a>
+            <a href="#">Sci-Fi</a>
+          </div>
+        </li>
+        <li><a href="#">Bollywood</a></li>
+        <li><a href="#">Webseries</a></li>
+        <li><a href="#">New</a></li>
+      </ul>
+
+      <!-- Search bar -->
+      <form action="https://www.google.com/search" class="search">
+        <input name="q" type="search" placeholder="Search Here ..." />
+        <button type="submit">
+          <img src="https://img.icons8.com/ios-filled/50/ffffff/search--v1.png" alt="Search" width="24" height="24">
+        </button>
+      </form>
+    </nav>
+  </header>
+
  <div class="container">
     <div class="header">
       <div class="poster">
@@ -31,13 +71,21 @@
 
     <div class="downloads">
       <h2>Download Links</h2>
-      <a href="#">⬇️ 480p WEBRip – 400MB – [Hindi + English]</a>
-      <a href="#">⬇️ 720p WEBRip – 800MB – [Hindi + English]</a>
-      <a href="#">⬇️ 1080p WEBRip – 1.5GB – [Hindi + English]</a>
-      <a href="#">⬇️ 2160p 4K – 4.5GB – [Hindi + English]</a>
-      <a href="#">🎧 Hindi Audio Track – 96MB – AAC</a>
-      <a href="#">📜 English Subtitles – SRT File</a>
+      <a href="/html/Maintainence.html">⬇️ 480p WEBRip – 400MB – [Hindi + English]</a>
+      <a href="/html/Maintainence.html">⬇️ 720p WEBRip – 800MB – [Hindi + English]</a>
+      <a href="/html/Maintainence.html">⬇️ 1080p WEBRip – 1.5GB – [Hindi + English]</a>
+      <a href="/html/Maintainence.html">⬇️ 2160p 4K – 4.5GB – [Hindi + English]</a>
+      <a href="/html/Maintainence.html">🎧 Hindi Audio Track – 96MB – AAC</a>
+      <a href="/html/Maintainence.html">📜 English Subtitles – SRT File</a>
     </div>
   </div>
+  <script>
+    const toggleBtn = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    toggleBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
 </body>
 </html>
