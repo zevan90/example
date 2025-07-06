@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Elemental</title>
+<link rel="stylesheet" href="/style.css">
+
+ <link rel="stylesheet" href="/dpage.css">
+  
+</head>
+<body>
+<header>
+    <nav class="navbar">
+      <div class="navbar-top">
+        <a href="#" class="logo">🎬 Moviewala</a>
+        <div class="menu-toggle" id="menu-toggle">
+          <svg viewBox="0 0 100 80" width="30" height="30">
+            <rect width="100" height="10"></rect>
+            <rect y="30" width="100" height="10"></rect>
+            <rect y="60" width="100" height="10"></rect>
+          </svg>
+        </div>
+      </div>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="/index.html">Home</a></li>
+        <li>
+          <a href="#">Hollywood ▾</a>
+          <div class="dropdown-content">
+            <a href="#">Action</a>
+            <a href="#">Drama</a>
+            <a href="#">Sci-Fi</a>
+          </div>
+        </li>
+        <li><a href="#">Bollywood</a></li>
+        <li><a href="#">Webseries</a></li>
+        <li><a href="#">New</a></li>
+      </ul>
+
+      <!-- Search bar -->
+      <form action="#" class="search">
+        <input name="q" type="search" placeholder="Search Here ..." />
+        <button type="submit">
+          <img src="/img/search.svg" alt="" width="24" height="24">
+        </button>
+      </form>
+    </nav>
+  </header>
+
+ <div class="container">
+    <div class="header">
+      <div class="poster">
+        <img src="https://www.91-cdn.com/metareel-images/content/posters-7-1704327222703-6oH378KUfCEitzJkm07r97L0RsZ.jpg?tr=h-350,w-230,q-60&version=5">
+      </div>
+      <div class="details">
+        <h1>Elemental</h1>
+        <div class="meta">
+          <span><strong>Language:</strong> English</span>
+          <span><strong>Release Date:</strong> 15 Aug 2023 (OTT)</span>
+          <span><strong>Cast: </strong>Leah Lewis, Mamoudou Athie, Ronnie del Carmen, Shila Ommi</span>
+          <span><strong>Genre: </strong>Romance, Fantasy, Comedy</span>
+          <span><strong>Duration: </strong>1h 42min</span>
+          <span><strong>More details: </strong>Fire | Computer Animation</span>          
+
+        </div>
+        <div class="description">
+                A new English film titled Elemental is slated for release on June 16, 2023. Mamoudou Athie and Leah Lewis will play the main protagonists in the Peter Sohn-directed film.
+        </div>
+      </div>
+    </div>
+
+    <div class="downloads">
+      <h2>Download Links</h2>
+      <a href="/Maintainence.html">⬇️ 480p WEBRip – 400MB – [Hindi + English]</a>
+      <a href="/Maintainence.html">⬇️ 720p WEBRip – 800MB – [Hindi + English]</a>
+      <a href="/Maintainence.html">⬇️ 1080p WEBRip – 1.5GB – [Hindi + English]</a>
+      <a href="/Maintainence.html">⬇️ 2160p 4K – 4.5GB – [Hindi + English]</a>
+      <a href="/Maintainence.html">🎧 Hindi Audio Track – 96MB – AAC</a>
+      <a href="/Maintainence.html">📜 English Subtitles – SRT File</a>
+    </div>
+  </div>
+  <script>
+    const toggleBtn = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    toggleBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>

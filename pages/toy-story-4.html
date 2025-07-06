@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Toy Story 4</title>
+<link rel="stylesheet" href="/style.css">
+
+ <link rel="stylesheet" href="/dpage.css">
+  
+</head>
+<body>
+<header>
+    <nav class="navbar">
+      <div class="navbar-top">
+        <a href="#" class="logo">🎬 Moviewala</a>
+        <div class="menu-toggle" id="menu-toggle">
+          <svg viewBox="0 0 100 80" width="30" height="30">
+            <rect width="100" height="10"></rect>
+            <rect y="30" width="100" height="10"></rect>
+            <rect y="60" width="100" height="10"></rect>
+          </svg>
+        </div>
+      </div>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="/index.html">Home</a></li>
+        <li>
+          <a href="#">Hollywood ▾</a>
+          <div class="dropdown-content">
+            <a href="#">Action</a>
+            <a href="#">Drama</a>
+            <a href="#">Sci-Fi</a>
+          </div>
+        </li>
+        <li><a href="#">Bollywood</a></li>
+        <li><a href="#">Webseries</a></li>
+        <li><a href="#">New</a></li>
+      </ul>
+
+      <!-- Search bar -->
+      <form action="#" class="search">
+        <input name="q" type="search" placeholder="Search Here ..." />
+        <button type="submit">
+          <img src="/img/search.svg" alt="" width="24" height="24">
+        </button>
+      </form>
+    </nav>
+  </header>
+
+ <div class="container">
+    <div class="header">
+      <div class="poster">
+        <img src="https://www.91-cdn.com/metareel-images/content/posters-7-1704337092330-ehYkgIEVkJY0SBX8cGHjmKtCeri.jpg?tr=h-350,w-230,q-60&version=5">
+      </div>
+      <div class="details">
+        <h1>Toy Story 4</h1>
+        <div class="meta">
+          <span><strong>Language:</strong> English</span>
+          <span><strong>Release Date:</strong> 21 Jun 2019</span>
+          <span><strong>Cast: </strong>Tom Hanks, Tim Allen, Annie Potts, Tony Hale</span>
+          <span><strong>Genre: </strong>Fantasy, Comedy, Family</span>
+          <span><strong>Duration: </strong>1h 40min</span>
+          <span><strong>More details: </strong>Friendship | Cartoon</span>          
+
+        </div>
+        <div class="description">
+                Woody has always been confident about his place in the world and that his priority is taking care of his kid, whether that's Andy or Bonnie. But when Bonnie adds a reluctant new toy called "Forky" to her room, a road trip adventure alongside old and new friends will show Woody how big the world can be for a toy.
+        </div>
+      </div>
+    </div>
+
+    <div class="downloads">
+      <h2>Download Links</h2>
+      <a href="/Maintainence.html">⬇️ 480p WEBRip – 400MB – [Hindi + English]</a>
+      <a href="/Maintainence.html">⬇️ 720p WEBRip – 800MB – [Hindi + English]</a>
+      <a href="/Maintainence.html">⬇️ 1080p WEBRip – 1.5GB – [Hindi + English]</a>
+      <a href="/Maintainence.html">⬇️ 2160p 4K – 4.5GB – [Hindi + English]</a>
+      <a href="/Maintainence.html">🎧 Hindi Audio Track – 96MB – AAC</a>
+      <a href="/Maintainence.html">📜 English Subtitles – SRT File</a>
+    </div>
+  </div>
+  <script>
+    const toggleBtn = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    toggleBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>
